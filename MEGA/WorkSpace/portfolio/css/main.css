@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b3b3b;
+}
+
+
+body {
+  background: black;
+  color:black;
+  font-family: 'Gotu', sans-serif;
+  overflow-x: hidden;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+h2 {
+  font-size: 30px;
+
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+span.bold {
+  font-weight: 600;
+}
+
+span.lightgrey {
+  color: #8a8c91;
+}
+
+main {
+  background-color: white;
+}
+.contenu {
+  width: 80%;
+  margin: auto;
+  padding: 100px 20px;
+  border-right: 1px solid #aaadb6;
+  border-left: 1px solid #aaadb6;
+}
+
+.projects, .formation, .about {
+  margin-bottom: 150px;
+}
+
+.title {
+  margin-bottom: 100px ;
+}
+
+.explanation {
+  margin-bottom: 150px ;
+}
+
+div.trait {
+  width: 150px;
+  border-top: 0.5px solid black;
+}
+
+.subexplanation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top:50px;
+  line-height: 30px;
+}
+
+.subexplanation .trait {
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+.formation {
+  margin-top: 20px;
+}
+
+.ecole {
+  line-height: 20px;
+}
+
+.ecole h3 {
+  padding-bottom: 15px;
+}
+
+.ecole section {
+  margin-bottom:10px;
+  text-align: justify;
+  line-height: 24px;
+}
+.bigcircle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 3px solid #737373;
+  margin:auto;
+}
+
+.smallcircle {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #8a8c91;
+  margin:auto;
+}
+
+.competences {
+  margin-top: 50px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.competences ul {
+  width:250px;
+  display: grid;
+  grid-template-columns: 45% 50%;
+  grid-column-gap: 5%;
+  grid-row-gap: 10px;
+  margin-top:20px;
+}
+
+.capacityCircle {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.projectContainer {
+  margin: 30px auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.projectCard {
+  padding: 10px;
+  border-radius: 5px;
+  width: 45%;
+  margin:10px 1%;
+  transition: 0.2s ease-in-out;
+}
+
+.projectCard:hover {
+  box-shadow:  20px 20px 60px #d9d9d9,
+  -20px -20px 60px #ffffff;
+  transform: translateY(-10px);
+}
+
+.projectCard img{
+  width: 98%;
+  height: auto;
+}
+
+.projectCard p {
+  text-align: justify;
+}
+
+.projectCard h4, .projectCard p {
+  padding: 10px 0px;
+}
+
+.contact {
+  text-decoration: underline;
+}
+
+.about {
+  line-height: 20px;
+}
+
+.about h1 {
+  margin-bottom:50px;
+}
+
+footer {
+  padding: 20px 20px;
+  border: 1px solid #aaadb6;
+  border-bottom: none;
+  width: 80%;
+  margin: auto;
+}
+footer img {
+  margin-left: 20px;
+  width: 32px;
+  height:32px;
+}
+
+aside {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+aside img {
+  width: auto;
+  height: 200px;
+  filter: grayscale(80%);
+  margin-left: 50px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (min-width: 480px ){
+  main {
+    width: 75%;
+  }
+  .page {
+    flex-direction: row;
+  }
+  aside {
+    position: fixed;
+    right: 0;
+    background-image: url("../image/background.jpg");
+    height: 100vh;
+    width: 25%;
+  }
+
+  aside img {
+    position: fixed;
+    bottom: 0;
+
+    width: 25%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+  .title {
+    margin-bottom: 200px ;
+  }
+
+  .explanation {
+    margin-bottom: 300px ;
+  }
+}
+
+
